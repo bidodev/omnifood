@@ -27,18 +27,6 @@ html {
 }
 
 /**
- * Basic styles for links
- */
-a {
-  color: #e50050;
-  text-decoration: none;
-}
-a:hover, a:active, a:focus {
-  color: #181818;
-  text-decoration: underline;
-}
-
-/**
  * Basic typography style for copy text
  */
 body {
@@ -108,12 +96,59 @@ header {
 }
 
 .header-wrapper {
-  color: #a09e9e;
-  font-size: 2rem;
-  border: 1px solid red;
-  width: auto;
-  height: 10vh;
+  width: 50vw;
+  height: 24vh;
   transform: translateX(10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-wrapper h1 {
+  color: #f1f1f1;
+  font-weight: lighter;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.btns-wrapper {
+  height: 7vh;
+  width: 17vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn:link, .btn:visited {
+  font-weight: 300;
+  color: #f1f1f1;
+  height: 4vh;
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: medium;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn:link:hover, .btn:visited:hover {
+  background-color: #cf6d17;
+}
+
+.btn-full:link, .btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #f1f1f1;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+.btn-ghost:hover {
+  color: #f1f1f1;
 }
 
 /*# sourceMappingURL=style.css.map */

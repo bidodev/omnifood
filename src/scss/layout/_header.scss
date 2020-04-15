@@ -14,10 +14,29 @@ header {
 }
 
 .header-wrapper {
-  color: #a09e9e;
-  font-size: 2rem;
-  border: 1px solid red;
-  width: auto;
-  height: 10vh;
+  //border: 1px solid red;
+  width: 50vw;
+  height: 24vh;
   transform: translateX(10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    color: #f1f1f1;
+    font-weight: lighter;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+}
+
+.btns-wrapper {
+  //border: 1px solid green;
+  height: 7vh;
+  width: 17vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
