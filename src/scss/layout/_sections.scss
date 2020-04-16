@@ -2,15 +2,12 @@
 // This file contains all style rulings regardins the sections
 // -----------------------------------------------------------------------------
 
-section {
-  padding: 8vh 0;
-}
-
 //FEATURES
 .features {
+  padding: 8vh 0;
   height: auto;
   background-color: #f7f7f7;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 .features__heading {
@@ -21,7 +18,7 @@ section {
   .long-copy {
     line-height: 3.5rem;
     font-size: 2rem;
-    width: 42vw;
+    width: 44vw;
     color: #606060;
   }
 }
@@ -29,31 +26,31 @@ section {
 .features__content {
   display: flex;
   //border: 1px solid black;
-  height: 50vh;
-  width: 85vw;
+  height: 40vh;
+  width: 70vw;
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 6rem;
 
   &-dispo {
-    @include flex-center;
     flex-direction: column;
     padding: 0 3rem;
+    width: 25%;
   }
   &-ready {
-    @include flex-center;
     flex-direction: column;
     padding: 0 3rem;
+    width: 25%;
   }
   &-organic {
-    @include flex-center;
     flex-direction: column;
     padding: 0 3rem;
+    width: 25%;
   }
   &-anything {
-    @include flex-center;
     flex-direction: column;
     padding: 0 3rem;
+    width: 25%;
   }
 }
 
@@ -64,8 +61,32 @@ ion-icon {
 
 p {
   margin-top: 3rem;
-  text-align: center;
-  line-height: 3.8rem;
-  font-size: 2rem;
+  line-height: 3.1rem;
+  font-size: 1.8rem;
   color: #282828;
+  word-spacing: 3px;
+  text-align: left;
+}
+
+//FAVORITE MEALS
+.favorite-meals {
+  height: 100vh;
+}
+
+.meals-showcase {
+  width: 100%;
+  display: flex;
+  list-style: none;
+
+  li {
+    width: 25%;
+  }
+}
+.meal-photo {
+  width: 100%;
+}
+
+.meal-photo img {
+  width: 100%;
+  height: auto;
 }

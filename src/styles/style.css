@@ -123,7 +123,7 @@ h3 {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/vendors/images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/vendors/images/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -160,7 +160,7 @@ nav a:link, nav a:visited {
   color: #f1f1f1;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s;
 }
@@ -184,14 +184,10 @@ nav a:hover, nav a:active {
   align-items: center;
 }
 
-section {
-  padding: 8vh 0;
-}
-
 .features {
+  padding: 8vh 0;
   height: auto;
   background-color: #f7f7f7;
-  border: 1px solid red;
 }
 
 .features__heading {
@@ -203,41 +199,37 @@ section {
 .features__heading .long-copy {
   line-height: 3.5rem;
   font-size: 2rem;
-  width: 42vw;
+  width: 44vw;
   color: #606060;
 }
 
 .features__content {
   display: flex;
-  height: 50vh;
-  width: 85vw;
+  height: 40vh;
+  width: 70vw;
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 6rem;
 }
 .features__content-dispo {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 0 3rem;
+  width: 25%;
 }
 .features__content-ready {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 0 3rem;
+  width: 25%;
 }
 .features__content-organic {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 0 3rem;
+  width: 25%;
 }
 .features__content-anything {
-  display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 0 3rem;
+  width: 25%;
 }
 
 ion-icon {
@@ -247,10 +239,33 @@ ion-icon {
 
 p {
   margin-top: 3rem;
-  text-align: center;
-  line-height: 3.8rem;
-  font-size: 2rem;
+  line-height: 3.1rem;
+  font-size: 1.8rem;
   color: #282828;
+  word-spacing: 3px;
+  text-align: left;
+}
+
+.favorite-meals {
+  height: 100vh;
+}
+
+.meals-showcase {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+.meals-showcase li {
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+}
+
+.meal-photo img {
+  width: 100%;
+  height: auto;
 }
 
 .btn:link, .btn:visited {
