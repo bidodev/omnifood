@@ -2,9 +2,12 @@
 // This file contains all style rulings regardins the sections
 // -----------------------------------------------------------------------------
 
+section {
+  padding: 8vh 0;
+}
+
 //FEATURES
 .features {
-  padding: 8vh 0;
   height: auto;
   background-color: #f7f7f7;
   //border: 1px solid red;
@@ -20,6 +23,7 @@
     font-size: 2rem;
     width: 44vw;
     color: #606060;
+    margin-bottom: 2vh;
   }
 }
 
@@ -70,7 +74,8 @@ p {
 
 //FAVORITE MEALS
 .favorite-meals {
-  height: 100vh;
+  height: auto;
+  padding: 0;
 }
 
 .meals-showcase {
@@ -84,9 +89,29 @@ p {
 }
 .meal-photo {
   width: 100%;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .meal-photo img {
   width: 100%;
   height: auto;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  opacity: 0.7;
+  cursor: zoom-in;
+
+  &:hover {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+////HOW IT WORKS
+.how-it-works {
+  //border: 1px solid red;
+  height: 80vh;
+  background-color: #f7f7f7;
+
+  //border: 1px solid red;
 }

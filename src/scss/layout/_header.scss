@@ -2,6 +2,7 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 header {
+  background-attachment: fixed;
   background-image: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.8)),
     image("hero.jpg");
   background-size: cover;
@@ -30,7 +31,7 @@ header {
 // -----------------------------------------------------------------------------
 nav {
   @include flex-center-between;
-
+  padding-right: 3vw;
   //border: 1px solid teal;
   height: 15vh;
 
@@ -51,10 +52,12 @@ nav {
       text-transform: uppercase;
       font-size: 2.5rem;
       border-bottom: 2px solid transparent;
-      transition: border-bottom 0.5s;
+      transition: all 0.5s;
+      opacity: 0.8;
     }
     &:hover,
     &:active {
+      opacity: 1;
       border-bottom: 2px solid #e67e22;
     }
   }
