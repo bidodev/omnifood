@@ -10,6 +10,7 @@ html {
  */
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /**
@@ -32,6 +33,43 @@ html {
 body {
   color: #181818;
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: #f1f1f1;
+  opacity: 0.8;
+  font-size: 5.2rem;
+  word-spacing: 3px;
+}
+
+h2 {
+  font-size: 3rem;
+  word-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #282828;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  width: 10rem;
+  background-color: #e67e22;
+  content: "";
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: #909090;
 }
 
 /**
@@ -138,21 +176,81 @@ nav a:hover, nav a:active {
   flex-direction: column;
   justify-content: space-between;
 }
-.text-wrapper h1 {
-  color: #f1f1f1;
-  opacity: 0.8;
-  font-weight: lighter;
-  font-size: 5.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-}
 .text-wrapper .btns-wrapper {
   height: 7vh;
   width: 17vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+section {
+  padding: 8vh 0;
+}
+
+.features {
+  height: auto;
+  background-color: #f7f7f7;
+  border: 1px solid red;
+}
+
+.features__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.features__heading .long-copy {
+  line-height: 3.5rem;
+  font-size: 2rem;
+  width: 42vw;
+  color: #606060;
+}
+
+.features__content {
+  display: flex;
+  height: 50vh;
+  width: 85vw;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+.features__content-dispo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+.features__content-ready {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+.features__content-organic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+.features__content-anything {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+ion-icon {
+  font-size: 64px;
+  color: #e67e22;
+}
+
+p {
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  color: #282828;
 }
 
 .btn:link, .btn:visited {

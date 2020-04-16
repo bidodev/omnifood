@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all style rulings regardins the sections
+// -----------------------------------------------------------------------------
+
+section {
+  padding: 8vh 0;
+}
+
+//FEATURES
+.features {
+  height: auto;
+  background-color: #f7f7f7;
+  border: 1px solid red;
+}
+
+.features__heading {
+  //border: 1px solid red;
+  @include flex-center-between;
+  flex-direction: column;
+
+  .long-copy {
+    line-height: 3.5rem;
+    font-size: 2rem;
+    width: 42vw;
+    color: #606060;
+  }
+}
+
+.features__content {
+  display: flex;
+  //border: 1px solid black;
+  height: 50vh;
+  width: 85vw;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 6rem;
+
+  &-dispo {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  &-ready {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  &-organic {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  &-anything {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+}
+
+ion-icon {
+  font-size: 64px;
+  color: #e67e22;
+}
+
+p {
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  color: #282828;
+}
