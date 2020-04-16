@@ -31,3 +31,15 @@
     @content;
   }
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

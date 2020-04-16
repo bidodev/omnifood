@@ -8,12 +8,59 @@ header {
   background-position: center;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  //border: 1px solid red;
 }
 
 .header-wrapper {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    width: auto;
+    //border: 1px solid red;
+    height: 10vh;
+    transform: translateX(10rem);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Header navigation styling rules
+// -----------------------------------------------------------------------------
+nav {
+  @include flex-center-between;
+
+  //border: 1px solid teal;
+  height: 15vh;
+
+  ul {
+    flex-basis: 42vw;
+    //border: 1px solid white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  a {
+    &:link,
+    &:visited {
+      padding: 8px 0;
+      color: #f1f1f1;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.5s;
+    }
+    &:hover,
+    &:active {
+      border-bottom: 2px solid #e67e22;
+    }
+  }
+}
+
+.text-wrapper {
   //border: 1px solid red;
   width: 50vw;
   height: 24vh;
@@ -24,19 +71,18 @@ header {
 
   h1 {
     color: #f1f1f1;
+    opacity: 0.8;
     font-weight: lighter;
-    font-size: 5.5rem;
+    font-size: 5.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 3px;
   }
-}
 
-.btns-wrapper {
-  //border: 1px solid green;
-  height: 7vh;
-  width: 17vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .btns-wrapper {
+    //border: 1px solid green;
+    height: 7vh;
+    width: 17vw;
+    @include flex-center-between;
+  }
 }

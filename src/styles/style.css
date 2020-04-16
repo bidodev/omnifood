@@ -90,12 +90,47 @@ header {
   background-position: center;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .header-wrapper {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-wrapper .logo {
+  width: auto;
+  height: 10vh;
+  transform: translateX(10rem);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+nav ul {
+  flex-basis: 42vw;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav a:link, nav a:visited {
+  padding: 8px 0;
+  color: #f1f1f1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+nav a:hover, nav a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+.text-wrapper {
   width: 50vw;
   height: 24vh;
   transform: translateX(10rem);
@@ -103,16 +138,16 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-.header-wrapper h1 {
+.text-wrapper h1 {
   color: #f1f1f1;
+  opacity: 0.8;
   font-weight: lighter;
-  font-size: 5.5rem;
+  font-size: 5.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 3px;
 }
-
-.btns-wrapper {
+.text-wrapper .btns-wrapper {
   height: 7vh;
   width: 17vw;
   display: flex;
