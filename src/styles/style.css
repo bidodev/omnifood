@@ -28,6 +28,18 @@ html {
 }
 
 /**
+ * Basic styles for links
+ */
+a {
+  color: #e67e22;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/**
  * Basic typography style for copy text
  */
 body {
@@ -71,6 +83,8 @@ h2:after {
 h3 {
   margin-top: 1rem;
   color: #909090;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 /**
@@ -125,7 +139,7 @@ h3 {
 
 header {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/vendors/images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -152,18 +166,19 @@ nav {
   height: 15vh;
 }
 nav ul {
-  flex-basis: 42vw;
+  flex-basis: 38vw;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 nav a:link, nav a:visited {
+  font-weight: 400;
   padding: 8px 0;
   color: #f1f1f1;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   border-bottom: 2px solid transparent;
   transition: all 0.5s;
   opacity: 0.8;
@@ -281,7 +296,7 @@ p {
   transform: scale(1.1);
   transition: all 0.3s;
   opacity: 0.7;
-  cursor: zoom-in;
+  cursor: pointer;
 }
 .meal-photo img:hover {
   transform: scale(1.03);
@@ -289,12 +304,113 @@ p {
 }
 
 .how-it-works {
-  height: 80vh;
+  height: auto;
   background-color: #f7f7f7;
 }
 
+.steps-wrapper {
+  width: 90vw;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.iphone-container {
+  width: 28vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 4vw;
+}
+
+.works-steps {
+  width: 30vw;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.works-steps div {
+  font-size: 2rem;
+  color: #606060;
+}
+.works-steps div span {
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #e67e22;
+  color: #e67e22;
+  font-size: 3rem;
+  margin-right: 2rem;
+  float: left;
+}
+
+.b4 {
+  display: flex;
+  width: 15vw;
+  justify-content: space-between;
+}
+.b4 .btn-app img {
+  height: 42px;
+  width: auto;
+}
+
+.app-screen {
+  width: 48%;
+}
+
+.cities {
+  height: 67vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cities-images {
+  width: 72vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cities-images > div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cities-images > div h3 {
+  padding-left: 1rem;
+}
+.cities-images > div img {
+  width: auto;
+  height: 20rem;
+}
+
+.div-icon {
+  padding-left: 2rem;
+  height: auto;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  height: 4.2vh;
+}
+.icon-text--desc {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #606060;
+}
+
 .btn:link, .btn:visited {
-  font-weight: 300;
+  font-weight: 400;
   color: #f1f1f1;
   height: 4vh;
   width: 8vw;

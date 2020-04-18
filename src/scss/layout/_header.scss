@@ -36,7 +36,7 @@ nav {
   height: 15vh;
 
   ul {
-    flex-basis: 42vw;
+    flex-basis: 38vw;
     //border: 1px solid white;
     list-style-type: none;
     display: flex;
@@ -46,11 +46,12 @@ nav {
   a {
     &:link,
     &:visited {
+      font-weight: 400;
       padding: 8px 0;
       color: #f1f1f1;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       border-bottom: 2px solid transparent;
       transition: all 0.5s;
       opacity: 0.8;
