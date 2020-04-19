@@ -409,6 +409,40 @@ p {
   color: #606060;
 }
 
+.testimonial-box {
+  border: 1px solid red;
+  width: 25vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.y {
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  height: 50vh;
+  border: 1px solid green;
+  margin: 0 auto;
+}
+
+cite {
+  display: flex;
+  align-items: center;
+}
+cite img {
+  padding-right: 1rem;
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+blockquote {
+  font-size: 2rem;
+  color: #666;
+}
+
 .btn:link, .btn:visited {
   font-weight: 400;
   color: #f1f1f1;

@@ -7,7 +7,7 @@
     "start": "run-p liveserver watch:styles",
     "build": "run-s clean clean:styles build:styles prefix:css copy",
     "deploy": "run-s build publish",
-    "liveserver": "live-server src",
+    "liveserver": "live-server --browser=firefox src",
     "build:styles": "sass src/scss/main.scss:src/styles/style.css",
     "watch:styles": "sass src/scss/main.scss:src/styles/style.css --watch",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/style.css -o src/styles/style.css",
